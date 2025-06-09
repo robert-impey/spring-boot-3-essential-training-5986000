@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BootingApplication<booting> DEV",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.frankmoley.lil.booting.BootingApplication",
+            "projectName": "booting",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": "-Dspring.profiles.active=dev",
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-BootingApplication<booting> TEST",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.frankmoley.lil.booting.BootingApplication",
+            "projectName": "booting",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": "-Dspring.profiles.active=test"
+        }
+    ]
+}
