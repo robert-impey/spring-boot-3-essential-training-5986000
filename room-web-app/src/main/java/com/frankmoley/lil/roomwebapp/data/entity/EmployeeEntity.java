@@ -27,6 +27,6 @@ public class EmployeeEntity {
     private String lastName;
 
     @Column(name = "position")
-    //@Enumerated(jakarta.persistence.EnumType.STRING)
-    private String position;
+    @Enumerated(jakarta.persistence.EnumType.STRING)
+    private Position position;
 }
