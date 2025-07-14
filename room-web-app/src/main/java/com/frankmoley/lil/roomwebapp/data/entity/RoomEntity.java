@@ -24,14 +24,4 @@ public class RoomEntity {
   private String number;
   @Column(name = "BED_INFO")
   private String bedInfo;
-
-  @Override
-  public String toString() {
-    return "RoomEntity{" +
-        "roomId=" + roomId +
-        ", name='" + name + '\'' +
-        ", number='" + number + '\'' +
-        ", bedInfo='" + bedInfo + '\'' +
-        '}';
-  }
 }
