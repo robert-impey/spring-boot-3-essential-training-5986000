@@ -32,6 +32,8 @@ public class RoomController {
             Room room = new Room(roomEntity.getRoomId(), roomEntity.getName(), roomEntity.getNumber(), roomEntity.getBedInfo());
             rooms.add(room);
         });
+
+        model.addAttribute("rooms", rooms);
         return "rooms";
     }
 
