@@ -29,11 +29,7 @@ public class RoomController {
         List<Room> rooms = new ArrayList<Room>(roomEntities.size());
 
         roomEntities.forEach(roomEntity -> {
-            Room room = new Room();
-            room.setId(roomEntity.getRoomId());
-            room.setName(roomEntity.getName());
-            room.setNumber(roomEntity.getNumber());
-            room.setInfo(roomEntity.getBedInfo());
+            Room room = new Room(roomEntity.getRoomId(), roomEntity.getName(), roomEntity.getNumber(), roomEntity.getBedInfo());
             rooms.add(room);
         });
         return "rooms";
