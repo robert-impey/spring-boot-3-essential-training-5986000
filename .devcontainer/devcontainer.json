@@ -34,6 +34,6 @@
 	},
 	"remoteUser": "vscode",
 	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
-	"postCreateCommand": "export PGPASSWORD=postgres && export PGUSER=postgres && export PGHOST=localhost && export PGDATABASE=local && sudo sh ./.devcontainer/startup.sh && psql -a -f ./.devcontainer/bin/schema.sql && psql -a -f ./.devcontainer/bin/data.sql"
+	"postCreateCommand": "export PGPASSWORD=postgres && export PGUSER=postgres && export PGHOST=localhost && export PGDATABASE=local"
 }
 // DevContainer Reference: https://code.visualstudio.com/docs/remote/devcontainerjson-reference
